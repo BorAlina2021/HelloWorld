@@ -14,5 +14,15 @@
             Console.ReadKey(true);
             Console.WriteLine("Vasyl changes");
         }
+
+        static int MethodSum(int x, int y)
+        {
+            return x + y;
+        }
+
+        static void MainSumMethod(string[] args)
+        {
+            Console.WriteLine(MethodSum(4, 9));
+        }
     }
 }
