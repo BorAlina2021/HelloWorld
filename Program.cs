@@ -46,11 +46,11 @@
             return a / b;
         }
 
-        static void SwapNum(int c, int m)
+        static void SwapNum(int firstNum, int secondNum)
         {
-            int g = c;
-            c = m;
-            m = g;
+            int g = firstNum;
+            firstNum = secondNum;
+            firstNum = g;
         }
     }
 }
