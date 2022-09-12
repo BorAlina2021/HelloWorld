@@ -15,13 +15,20 @@
             Console.ReadKey(true);
 
             Console.ReadLine();
+            Console.ReadLine();
             Console.WriteLine(MethodSum(4, 9));
-
+            Console.ReadLine();
+            Console.WriteLine(MethodDivision(16.56, 3.13));
         }
 
         static int MethodSum(int x, int y)
         {
             return x + y;
+        }
+
+        static double MethodDivision(double a, double b)
+        {
+            return a / b;
         }
     }
 }
