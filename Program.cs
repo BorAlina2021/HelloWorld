@@ -19,6 +19,21 @@
             Console.WriteLine(MethodSum(4, 9));
             Console.ReadLine();
             Console.WriteLine(MethodDivision(16.56, 3.13));
+            Console.ReadLine();
+
+            int firstNum = 5;
+            int secondNum = 6;
+            Console.WriteLine("Value of FirstNum and SecondNum before swapping:");
+            Console.WriteLine();
+            Console.WriteLine("firstNum=" + " " + firstNum);
+            Console.WriteLine("secondNum=" + " " + secondNum);
+            SwapNum(firstNum, secondNum);
+            Console.WriteLine();
+            Console.WriteLine("Value of FirstNum and SecondNum after swapping:");
+            Console.WriteLine();
+            Console.WriteLine("firstNum=" + " " + secondNum);
+            Console.WriteLine("secondNum=" + " " + firstNum);
+            Console.WriteLine();
         }
 
         static int MethodSum(int x, int y)
@@ -29,6 +44,13 @@
         static double MethodDivision(double a, double b)
         {
             return a / b;
+        }
+
+        static void SwapNum(int c, int m)
+        {
+            int g = c;
+            c = m;
+            m = g;
         }
     }
 }
