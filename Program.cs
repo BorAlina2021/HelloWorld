@@ -14,12 +14,12 @@
             Console.Write($"{Environment.NewLine}Press any key to exit...");
             Console.ReadKey(true);
 
-            Console.ReadLine();
-            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine(MethodSum(4, 9));
             Console.ReadLine();
             Console.WriteLine(MethodDivision(16.56, 3.13));
-            Console.ReadLine();
+            Console.WriteLine();
 
             int firstNum = 5;
             int secondNum = 6;
