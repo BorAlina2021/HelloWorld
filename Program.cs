@@ -26,6 +26,7 @@
             Console.WriteLine("Value of FirstNum and SecondNum before swapping:");
             Console.WriteLine();
             SwapNum(firstNum, secondNum);
+<<<<<<< HEAD
 
             Console.WriteLine();
             double fahrenheit;
@@ -43,6 +44,8 @@
 
 
             Console.ReadLine();
+=======
+>>>>>>> 8a067b670e87db883b312f19a6fdfab6e456abc8
         }
 
         static int MethodSum(int x, int y)
