@@ -26,6 +26,23 @@
             Console.WriteLine("Value of FirstNum and SecondNum before swapping:");
             Console.WriteLine();
             SwapNum(firstNum, secondNum);
+
+            Console.WriteLine();
+            double fahrenheit;
+            double kelvin;
+            double celsius = 18;
+            Console.WriteLine("Converting degrees: Celsius to Fahrenheit:");
+            Console.WriteLine("Celsius:" + celsius);
+            fahrenheit = (celsius * 9) / 5 + 32;
+            Console.WriteLine("Fahrenheit:" + fahrenheit);
+            Console.WriteLine("Converting degrees: Celsius to Kelvin:");
+            Console.WriteLine("Celsius:" + celsius);
+            kelvin = celsius + 273.15;
+            Console.WriteLine("Kelvin:" + kelvin);
+            Console.ReadLine();
+
+
+            Console.ReadLine();
         }
 
         static int MethodSum(int x, int y)
