@@ -27,23 +27,23 @@
             // Console.WriteLine();
             // SwapNum(firstNum, secondNum);
 
-            Console.WriteLine();
-            double fahrenheit;
-            double kelvin;
-            double celsius = 18;
-            Console.WriteLine("Converting degrees: Celsius to Fahrenheit:");
-            Console.WriteLine("Celsius:" + celsius);
-            fahrenheit = (celsius * 9) / 5 + 32;
-            Console.WriteLine("Fahrenheit:" + fahrenheit);
-            Console.WriteLine("Converting degrees: Celsius to Kelvin:");
-            Console.WriteLine("Celsius:" + celsius);
-            kelvin = celsius + 273.15;
-            Console.WriteLine("Kelvin:" + kelvin);
-            Console.ReadLine();
+            // Console.WriteLine();
+            // double fahrenheit;
+            // double kelvin;
+            // double celsius = 18;
+            // Console.WriteLine("Converting degrees: Celsius to Fahrenheit:");
+            // Console.WriteLine("Celsius:" + celsius);
+            // fahrenheit = (celsius * 9) / 5 + 32;
+            // Console.WriteLine("Fahrenheit:" + fahrenheit);
+            // Console.WriteLine("Converting degrees: Celsius to Kelvin:");
+            // Console.WriteLine("Celsius:" + celsius);
+            // kelvin = celsius + 273.15;
+            // Console.WriteLine("Kelvin:" + kelvin);
+            // Console.ReadLine();
 
-            Console.WriteLine(remove_char("w3resource", 1));
-            Console.WriteLine(remove_char("w3resource", 9));
-            Console.WriteLine(remove_char("w3resource", 0));
+            // Console.WriteLine(remove_char("w3resource", 1));
+            // Console.WriteLine(remove_char("w3resource", 9));
+            // Console.WriteLine(remove_char("w3resource", 0));
 
             Console.WriteLine();
             Console.WriteLine("Given string: w3resource");
@@ -62,9 +62,15 @@
             char lastChar = str2[str2.Length - 1];
             firstChar = str2[str2.Length - 1];
             lastChar = str2[0];
-            string str3 = str2.Substring(1, str2.Length - 2); 
+            string str3 = str2.Substring(1, str2.Length - 2);
             Console.WriteLine("The outcome: " + firstChar + str3 + lastChar);
             Console.WriteLine();
+
+            char[] myChar = new Char[] { 'T' };
+            string StrChar = new string(myChar);
+            string myStr = "The quick brown fox jumps over the lazy dog.";
+            Console.WriteLine("What we receive after adding 'T' to the string: " + StrChar + myStr + StrChar);
+
         }
 
         public static string remove_char(string str, int n)
