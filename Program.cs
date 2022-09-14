@@ -45,31 +45,14 @@
             // Console.WriteLine(remove_char("w3resource", 9));
             // Console.WriteLine(remove_char("w3resource", 0));
 
-            Console.WriteLine();
-            Console.WriteLine("Given string: w3resource");
             string str = "w3resource";
-            char firstLetter = str[0];
-            char lastLetter = str[str.Length - 1];
-            firstLetter = str[str.Length - 1];
-            lastLetter = str[0];
-            string str1 = str.Substring(1, str.Length - 2);
-            Console.WriteLine("The outcome: " + firstLetter + str1 + lastLetter);
-            Console.WriteLine();
-
-            Console.WriteLine("Given string: Python");
+            ReplaceLetter(str);
             string str2 = "Python";
-            char firstChar = str2[0];
-            char lastChar = str2[str2.Length - 1];
-            firstChar = str2[str2.Length - 1];
-            lastChar = str2[0];
-            string str3 = str2.Substring(1, str2.Length - 2);
-            Console.WriteLine("The outcome: " + firstChar + str3 + lastChar);
-            Console.WriteLine();
-
-            char[] myChar = new Char[] { 'T' };
-            string StrChar = new string(myChar);
+            ReplaceLetter(str2);
             string myStr = "The quick brown fox jumps over the lazy dog.";
-            Console.WriteLine("What we receive after adding 'T' to the string: " + StrChar + myStr + StrChar);
+            AddFirstLetter(myStr);
+            string myStr2 = "Who are you?";
+            AddFirstLetter(myStr2);
 
         }
 
@@ -99,5 +82,24 @@
             Console.WriteLine("firstNum=" + " " + firstNum);
             Console.WriteLine("secondNum=" + " " + secondNum);
         }
+
+        static void AddFirstLetter(string myStr)
+        {
+            char myChar = myStr[0];
+            myStr = myChar + myStr + myChar;
+            Console.WriteLine($"What we receive after adding '{myChar}' to the string: " + myStr);
+
+        }
+
+        static void ReplaceLetter(string str)
+        {
+            Console.WriteLine("Given string: " + str);
+            char firstLetter = str[0];
+            char lastLetter = str[str.Length - 1];
+            str = str.Substring(1, str.Length - 2);
+            string finalLetter = lastLetter + str + firstLetter;
+            Console.WriteLine("The outcome: " + finalLetter);
+        }
+
     }
 }
