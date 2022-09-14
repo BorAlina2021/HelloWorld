@@ -77,6 +77,15 @@
             Console.WriteLine($"Input second integer: {y}");
             Console.WriteLine("Check if one is negative and one is positive: ");
             Console.WriteLine(CheckInt(x, y));
+            Console.WriteLine();
+
+            int c = 5;
+            int d = 6;
+            Console.WriteLine(SumInt(c, d));
+
+            int a = 8;
+            int b = 8;
+            Console.WriteLine(SumInt(a, b));
         }
 
         public static string remove_char(string str, int n)
@@ -117,5 +126,19 @@
                 return false;
             }
         }
+
+        static int SumInt(int x, int y)
+        {
+            int sum = x + y;
+            if (x == y)
+            {
+                return (sum * 3);
+            }
+            else
+            {
+                return (sum);
+            }
+        }
+
     }
 }
