@@ -21,11 +21,11 @@
             // Console.WriteLine(MethodDivision(16.56, 3.13));
             // Console.WriteLine();
 
-            int firstNum = 5;
-            int secondNum = 6;
-            Console.WriteLine("Value of FirstNum and SecondNum before swapping:");
-            Console.WriteLine();
-            SwapNum(firstNum, secondNum);
+            // int firstNum = 5;
+            // int secondNum = 6;
+            // Console.WriteLine("Value of FirstNum and SecondNum before swapping:");
+            // Console.WriteLine();
+            // SwapNum(firstNum, secondNum);
 
             Console.WriteLine();
             double fahrenheit;
@@ -41,11 +41,20 @@
             Console.WriteLine("Kelvin:" + kelvin);
             Console.ReadLine();
 
-            Console.ReadLine();
-
             Console.WriteLine(remove_char("w3resource", 1));
             Console.WriteLine(remove_char("w3resource", 9));
             Console.WriteLine(remove_char("w3resource", 0));
+
+            Console.WriteLine();
+            Console.WriteLine("Given string: w3resource");
+            string str = "w3resource";
+            char firstLetter = str[0];
+            char lastLetter = str[str.Length - 1];
+            firstLetter = str[str.Length - 1];
+            lastLetter = str[0];
+            string str1 = str.Substring(1, str.Length - 2);
+            Console.WriteLine("The outcome: " + firstLetter + str1 + lastLetter);
+            Console.WriteLine();
         }
 
         public static string remove_char(string str, int n)
