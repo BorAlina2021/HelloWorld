@@ -45,32 +45,38 @@
             // Console.WriteLine(remove_char("w3resource", 9));
             // Console.WriteLine(remove_char("w3resource", 0));
 
-            Console.WriteLine();
-            Console.WriteLine("Given string: w3resource");
-            string str = "w3resource";
-            char firstLetter = str[0];
-            char lastLetter = str[str.Length - 1];
-            firstLetter = str[str.Length - 1];
-            lastLetter = str[0];
-            string str1 = str.Substring(1, str.Length - 2);
-            Console.WriteLine("The outcome: " + firstLetter + str1 + lastLetter);
-            Console.WriteLine();
+            // Console.WriteLine();
+            // Console.WriteLine("Given string: w3resource");
+            // string str = "w3resource";
+            // char firstLetter = str[0];
+            // char lastLetter = str[str.Length - 1];
+            // firstLetter = str[str.Length - 1];
+            // lastLetter = str[0];
+            // string str1 = str.Substring(1, str.Length - 2);
+            // Console.WriteLine("The outcome: " + firstLetter + str1 + lastLetter);
+            // Console.WriteLine();
 
-            Console.WriteLine("Given string: Python");
-            string str2 = "Python";
-            char firstChar = str2[0];
-            char lastChar = str2[str2.Length - 1];
-            firstChar = str2[str2.Length - 1];
-            lastChar = str2[0];
-            string str3 = str2.Substring(1, str2.Length - 2);
-            Console.WriteLine("The outcome: " + firstChar + str3 + lastChar);
-            Console.WriteLine();
+            // Console.WriteLine("Given string: Python");
+            // string str2 = "Python";
+            // char firstChar = str2[0];
+            // char lastChar = str2[str2.Length - 1];
+            // firstChar = str2[str2.Length - 1];
+            // lastChar = str2[0];
+            // string str3 = str2.Substring(1, str2.Length - 2);
+            // Console.WriteLine("The outcome: " + firstChar + str3 + lastChar);
+            // Console.WriteLine();
 
-            char[] myChar = new Char[] { 'T' };
-            string StrChar = new string(myChar);
-            string myStr = "The quick brown fox jumps over the lazy dog.";
-            Console.WriteLine("What we receive after adding 'T' to the string: " + StrChar + myStr + StrChar);
+            // char[] myChar = new Char[] { 'T' };
+            // string StrChar = new string(myChar);
+            // string myStr = "The quick brown fox jumps over the lazy dog.";
+            // Console.WriteLine("What we receive after adding 'T' to the string: " + StrChar + myStr + StrChar);
 
+            int x = 25;
+            int y = -5;
+            Console.WriteLine($"Input first integer: {x}");
+            Console.WriteLine($"Input second integer: {y}");
+            Console.WriteLine("Check if one is negative and one is positive: ");
+            Console.WriteLine(CheckInt(x, y));
         }
 
         public static string remove_char(string str, int n)
@@ -98,6 +104,18 @@
             Console.WriteLine("Value of FirstNum and SecondNum after swapping:");
             Console.WriteLine("firstNum=" + " " + firstNum);
             Console.WriteLine("secondNum=" + " " + secondNum);
+        }
+
+        static Boolean CheckInt(int Number, int Number1)
+        {
+            if (0 < Number && Number1 < 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
