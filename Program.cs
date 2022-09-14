@@ -1,4 +1,4 @@
-﻿namespace HelloWorld
+namespace HelloWorld
 {
     class Program
     {
@@ -54,6 +54,16 @@
             lastLetter = str[0];
             string str1 = str.Substring(1, str.Length - 2);
             Console.WriteLine("The outcome: " + firstLetter + str1 + lastLetter);
+            Console.WriteLine();
+
+            Console.WriteLine("Given string: Python");
+            string str2 = "Python";
+            char firstChar = str2[0];
+            char lastChar = str2[str2.Length - 1];
+            firstChar = str2[str2.Length - 1];
+            lastChar = str2[0];
+            string str3 = str2.Substring(1, str2.Length - 2);
+            Console.WriteLine("The outcome: " + firstChar + str3 + lastChar);
             Console.WriteLine();
         }
 
