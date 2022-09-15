@@ -71,13 +71,13 @@
             // string myStr = "The quick brown fox jumps over the lazy dog.";
             // Console.WriteLine("What we receive after adding 'T' to the string: " + StrChar + myStr + StrChar);
 
-            int x = 25;
-            int y = -5;
-            Console.WriteLine($"Input first integer: {x}");
-            Console.WriteLine($"Input second integer: {y}");
-            Console.WriteLine("Check if one is negative and one is positive: ");
-            Console.WriteLine(CheckInt(x, y));
-            Console.WriteLine();
+            // int x = 25;
+            // int y = -5;
+            // Console.WriteLine($"Input first integer: {x}");
+            // Console.WriteLine($"Input second integer: {y}");
+            // Console.WriteLine("Check if one is negative and one is positive: ");
+            // Console.WriteLine(CheckInt(x, y));
+            // Console.WriteLine();
 
             int c = 5;
             int d = 6;
@@ -87,13 +87,29 @@
             int b = 8;
             Console.WriteLine(SumInt(a, b));
 
+            // Console.WriteLine();
+            // Console.WriteLine("I print numbers from 1 to 99:");
+            // int i;
+            // for (i = 1; i <= 99; i++)
+            // {
+            //      Console.WriteLine(i);
+            // }
+
             Console.WriteLine();
-            Console.WriteLine("I print numbers from 1 to 99:");
-            int i;
-            for (i = 1; i <= 99; i++)
+            Console.WriteLine("Given string: It is a string with smallest and largest word");
+            string sentence = "It is a string with smallest and largest word";
+            string[] splittowords = sentence.Split(' ');
+            string MaxWord = "";
+            int Max = 0;
+
+            foreach (string words in splittowords)
             {
-                Console.WriteLine(i);
+                if (Max < words.Length)
+                {
+                    MaxWord = words;
+                }
             }
+            Console.WriteLine(MaxWord);
         }
 
         public static string remove_char(string str, int n)
