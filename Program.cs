@@ -110,6 +110,10 @@
                 }
             }
             Console.WriteLine(MaxWord);
+
+            Console.WriteLine();
+            string sentence1 = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.";
+            Console.WriteLine(sentence1.ToLower());
         }
 
         public static string remove_char(string str, int n)
