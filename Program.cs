@@ -114,6 +114,16 @@
             Console.WriteLine();
             string sentence1 = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.";
             Console.WriteLine(sentence1.ToLower());
+
+            Console.WriteLine();
+            int num1;
+            int num2;
+
+            Console.WriteLine("\nGiven first number:");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Given second number:");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(num1 == 20 || num2 == 20 || (num1 + num2 == 20));
         }
 
         public static string remove_char(string str, int n)
@@ -167,6 +177,5 @@
                 return (sum);
             }
         }
-
     }
 }
