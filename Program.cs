@@ -86,6 +86,14 @@
             int a = 8;
             int b = 8;
             Console.WriteLine(SumInt(a, b));
+
+            Console.WriteLine();
+            Console.WriteLine("I print numbers from 1 to 99:");
+            int i;
+            for (i = 1; i <= 99; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
 
         public static string remove_char(string str, int n)
