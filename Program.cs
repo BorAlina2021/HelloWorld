@@ -79,13 +79,13 @@
             // Console.WriteLine(CheckInt(x, y));
             // Console.WriteLine();
 
-            int c = 5;
-            int d = 6;
-            Console.WriteLine(SumInt(c, d));
+            // int c = 5;
+            // int d = 6;
+            // Console.WriteLine(SumInt(c, d));
 
-            int a = 8;
-            int b = 8;
-            Console.WriteLine(SumInt(a, b));
+            // int a = 8;
+            // int b = 8;
+            // Console.WriteLine(SumInt(a, b));
 
             // Console.WriteLine();
             // Console.WriteLine("I print numbers from 1 to 99:");
@@ -95,21 +95,21 @@
             //      Console.WriteLine(i);
             // }
 
-            Console.WriteLine();
-            Console.WriteLine("Given string: It is a string with smallest and largest word");
-            string sentence = "It is a string with smallest and largest word";
-            string[] splittowords = sentence.Split(' ');
-            string MaxWord = "";
-            int Max = 0;
+            // Console.WriteLine();
+            // Console.WriteLine("Given string: It is a string with smallest and largest word");
+            // string sentence = "It is a string with smallest and largest word";
+            // string[] splittowords = sentence.Split(' ');
+            // string MaxWord = "";
+            // int Max = 0;
 
-            foreach (string words in splittowords)
-            {
-                if (Max < words.Length)
-                {
-                    MaxWord = words;
-                }
-            }
-            Console.WriteLine(MaxWord);
+            // foreach (string words in splittowords)
+            // {
+            //      if (Max < words.Length)
+            //    {
+            //      MaxWord = words;
+            //    }
+            // }
+            //Console.WriteLine(MaxWord);
 
             Console.WriteLine();
             string sentence1 = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.";
@@ -118,12 +118,17 @@
             Console.WriteLine();
             int num1;
             int num2;
-
             Console.WriteLine("\nGiven first number:");
             num1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Given second number:");
             num2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(num1 == 20 || num2 == 20 || (num1 + num2 == 20));
+
+            Console.WriteLine();
+            double n = 20.243D;
+            double m = 15.5756D;
+            Console.WriteLine($"What we input: {n} and {m}");
+            Console.WriteLine(AbsValue(n,m));
         }
 
         public static string remove_char(string str, int n)
@@ -176,6 +181,17 @@
             {
                 return (sum);
             }
+        }
+
+        static double AbsValue (double x, double y)
+        {
+            double subtraction = x - y;
+            Math.Abs(subtraction);
+            if (x > y)
+            {
+                Console.WriteLine("What we receive: " + (Math.Abs(subtraction) * 2));
+            }
+                return (y - x);
         }
     }
 }
