@@ -131,7 +131,8 @@
             // Console.WriteLine(AbsValue(n, m));
 
             // OddNum();
-            MultElem();
+            // MultElem();
+            ReverseWords();
         }
 
         public static string remove_char(string str, int n)
@@ -218,6 +219,19 @@
             for (int i = 0; i < firstarr.Length; i++)
             {
                 Console.Write(firstarr[i] * secondarr[i] + " ");
+            }
+        }
+
+        static void ReverseWords()
+        {
+            Console.WriteLine("An original string: \nDisplay the pattern like pyramid using the alphabet.");
+            string s = "Display the pattern like pyramid using the alphabet.";
+            string[] sentence = s.Split(' ');
+            Array.Reverse(sentence);
+            Console.WriteLine("The modified string: ");
+            for (int i = 0; i <= sentence.Length - 1; i++)
+            {
+                Console.Write(sentence[i] + " ");
             }
         }
     }
