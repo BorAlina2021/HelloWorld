@@ -111,25 +111,26 @@
             // }
             //Console.WriteLine(MaxWord);
 
-            Console.WriteLine();
-            string sentence1 = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.";
-            Console.WriteLine(sentence1.ToLower());
+            // Console.WriteLine();
+            // string sentence1 = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.";
+            // Console.WriteLine(sentence1.ToLower());
 
-            Console.WriteLine();
-            int num1;
-            int num2;
-            Console.WriteLine("\nGiven first number:");
-            num1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Given second number:");
-            num2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(num1 == 20 || num2 == 20 || (num1 + num2 == 20));
+            // Console.WriteLine();
+            // int num1;
+            // int num2;
+            // Console.WriteLine("\nGiven first number:");
+            // num1 = Convert.ToInt32(Console.ReadLine());
+            // Console.WriteLine("Given second number:");
+            // num2 = Convert.ToInt32(Console.ReadLine());
+            // Console.WriteLine(num1 == 20 || num2 == 20 || (num1 + num2 == 20));
 
-            Console.WriteLine();
-            double n = 20.243D;
-            double m = 15.5756D;
-            Console.WriteLine($"What we input: {n} and {m}");
-            Console.WriteLine(AbsValue(n, m));
+            // Console.WriteLine();
+            // double n = 20.243D;
+            // double m = 15.5756D;
+            //Console.WriteLine($"What we input: {n} and {m}");
+            // Console.WriteLine(AbsValue(n, m));
 
+            OddNum();
         }
 
         public static string remove_char(string str, int n)
@@ -193,6 +194,17 @@
                 return (Math.Abs(subtraction) * 2);
             }
             return (y - x);
+        }
+
+        static void OddNum()
+        {
+            for (int x = 1; x < 100; x++)
+            {
+                if (x % 2 == 0)
+                {
+                    Console.WriteLine(x);
+                }
+            }
         }
     }
 }
