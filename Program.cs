@@ -129,6 +129,7 @@
             double m = 15.5756D;
             Console.WriteLine($"What we input: {n} and {m}");
             Console.WriteLine(AbsValue(n, m));
+
         }
 
         public static string remove_char(string str, int n)
@@ -183,6 +184,7 @@
             }
         }
 
+
         static double AbsValue(double x, double y)
         {
             double subtraction = x - y;
@@ -193,4 +195,5 @@
             return (y - x);
         }
     }
+}
 }
