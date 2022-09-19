@@ -130,7 +130,8 @@
             //Console.WriteLine($"What we input: {n} and {m}");
             // Console.WriteLine(AbsValue(n, m));
 
-            OddNum();
+            // OddNum();
+            MultElem();
         }
 
         public static string remove_char(string str, int n)
@@ -204,6 +205,19 @@
                 {
                     Console.WriteLine(x);
                 }
+            }
+        }
+
+        static void MultElem()
+        {
+            int[] firstarr = { 1, 3, -5, 4 };
+            int[] secondarr = { 1, 4, -5, -2 };
+            Console.WriteLine("The First Array: [{0}]", string.Join(", ", firstarr));
+            Console.WriteLine("The Second Array: [{0}]", string.Join(", ", secondarr));
+            Console.WriteLine("What we receive after multiplying corresponding elements of arrays: ");
+            for (int i = 0; i < firstarr.Length; i++)
+            {
+                Console.Write(firstarr[i] * secondarr[i] + " ");
             }
         }
     }
