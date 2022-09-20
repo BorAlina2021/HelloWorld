@@ -135,7 +135,7 @@
             // ReverseWords("Display the pattern like pyramid using the alphabet.");
             // ReverseWords("Vasyl love Alina");
             // BuildNumber();
-            SumDigits(12);
+            // SumDigits(12);
 
             int x = 15;
             CheckEvenOdd(x);
