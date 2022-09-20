@@ -133,6 +133,9 @@
             // OddNum();
             // MultElem();
             ReverseWords();
+
+            int x = 15;
+            CheckEvenOdd(x);
         }
 
         public static string remove_char(string str, int n)
@@ -232,6 +235,23 @@
             for (int i = 0; i <= sentence.Length - 1; i++)
             {
                 Console.Write(sentence[i] + " ");
+            }
+        }
+
+        static void CheckEvenOdd(int x)
+        {
+            Console.WriteLine($"Given number: {x}");
+            if (x % 2 == 0)
+            {
+                Console.WriteLine($"{x} is an odd integer");
+            }
+            else if (x % 2 != 0)
+            {
+                Console.WriteLine($"{x} is an even integer");
+            }
+            else
+            {
+                Console.WriteLine($"{x} equals to 0");
             }
         }
     }
