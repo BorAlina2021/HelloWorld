@@ -142,6 +142,9 @@
 
             int y = 14;
             CheckPositiveNegative(y);
+
+            int z = 24;
+            CheckIfCandidateCanVote(z);
         }
 
         public static string remove_char(string str, int n)
@@ -297,5 +300,17 @@
             }
         }
 
+        static void CheckIfCandidateCanVote(int x)
+        {
+            Console.WriteLine($"\nThe candidate is able to vote if his/her age is 21 or more");
+            if (x >= 21)
+            {
+                Console.WriteLine($"The candidate's age is {x}, so he/she is able to vote.");
+            }
+            else
+            {
+                Console.WriteLine($"The candidate's age is {x}, so he/she is not able to vote.");
+            }
+        }
     }
 }
