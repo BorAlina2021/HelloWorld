@@ -151,6 +151,11 @@
 
             int b = -5;
             DisplayValue(b);
+
+            int c = 25;
+            int d = 63;
+            int e = 10;
+            FindLargestNumber(c, d, e);
         }
 
         public static string remove_char(string str, int n)
@@ -353,6 +358,23 @@
                 n = -1;
             }
             Console.WriteLine($"Output number: {n}");
+        }
+
+        static void FindLargestNumber(int x, int y, int z)
+        {
+            Console.WriteLine($"\nInput the 1st number: {x}; \nInput the 2nd number: {y}; \nInput the 3rd number: {z}");
+            if (x > y && x > z)
+            {
+                Console.WriteLine("The 1st Number is the greatest among three.");
+            }
+            else if (y > x && y > z)
+            {
+                Console.WriteLine("The 2nd Number is the greatest among three.");
+            }
+            else
+            {
+                Console.WriteLine("The 3rd Number is the greatest among three.");
+            }
         }
     }
 }
