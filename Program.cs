@@ -130,11 +130,11 @@
             //Console.WriteLine($"What we input: {n} and {m}");
             // Console.WriteLine(AbsValue(n, m));
 
-            OddNum();
+            // OddNum();
             // MultElem();
-            ReverseWords("Display the pattern like pyramid using the alphabet.");
-            ReverseWords("Vasyl love Alina");
-            BuildNumber();
+            // ReverseWords("Display the pattern like pyramid using the alphabet.");
+            // ReverseWords("Vasyl love Alina");
+            // BuildNumber();
             SumDigits(12);
 
             int x = 15;
