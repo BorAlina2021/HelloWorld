@@ -130,9 +130,12 @@
             //Console.WriteLine($"What we input: {n} and {m}");
             // Console.WriteLine(AbsValue(n, m));
 
-            // OddNum();
+            OddNum();
             // MultElem();
-            ReverseWords();
+            ReverseWords("Display the pattern like pyramid using the alphabet.");
+            ReverseWords("Vasyl love Alina");
+            BuildNumber();
+            SumDigits(12);
         }
 
         public static string remove_char(string str, int n)
@@ -202,7 +205,7 @@
         {
             for (int x = 1; x < 100; x++)
             {
-                if (x % 2 == 0)
+                if (x % 2 != 0)
                 {
                     Console.WriteLine(x);
                 }
@@ -222,17 +225,36 @@
             }
         }
 
-        static void ReverseWords()
+        static void ReverseWords(string str)
         {
-            Console.WriteLine("An original string: \nDisplay the pattern like pyramid using the alphabet.");
-            string s = "Display the pattern like pyramid using the alphabet.";
-            string[] sentence = s.Split(' ');
-            Array.Reverse(sentence);
+            Console.WriteLine($"An original string: \n {str}");
+            string[] sentence = str.Split(' ');
+            string[] sentence1 = new string[sentence.Length];
             Console.WriteLine("The modified string: ");
-            for (int i = 0; i <= sentence.Length - 1; i++)
+            for (int i = 0, j = sentence.Length - 1; i < sentence.Length && j >= 0; i++, j--)
             {
-                Console.Write(sentence[i] + " ");
+                sentence1[j] = sentence[i];
             }
+            Console.WriteLine(string.Join(" ", sentence1));
+        }
+
+        static void BuildNumber()
+        {
+            var numbersArray = new int[] { 3, 8, 0, 9, 9, 3, 0, 2, 8, 2, 0, 2 };
+            string number = string.Join("", numbersArray);
+            Console.WriteLine(number);
+        }
+
+        static void SumDigits(int number)
+        {
+            int sum = 0;
+            while (number != 0)
+            {
+                int lastDigit = number % 10;
+                sum = sum + lastDigit;
+                number = number / 10;
+            }
+            Console.WriteLine($"Sum of digits({number}) = {sum}");
         }
     }
 }
