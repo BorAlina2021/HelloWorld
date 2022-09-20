@@ -139,6 +139,9 @@
 
             int x = 15;
             CheckEvenOdd(x);
+
+            int y = 14;
+            CheckPositiveNegative(y);
         }
 
         public static string remove_char(string str, int n)
@@ -276,5 +279,23 @@
                 Console.WriteLine($"{x} equals to 0");
             }
         }
+
+        static void CheckPositiveNegative(int x)
+        {
+            Console.WriteLine($"\nGiven number: {x}");
+            if (x > 0)
+            {
+                Console.WriteLine($"{x} is a positive number");
+            }
+            else if (x < 0)
+            {
+                Console.WriteLine($"{x} is a negative number");
+            }
+            else
+            {
+                Console.WriteLine($"{x} number equals to 0");
+            }
+        }
+
     }
 }
