@@ -132,10 +132,14 @@
 
             OddNum();
             // MultElem();
+            ReverseWords();
             ReverseWords("Display the pattern like pyramid using the alphabet.");
             ReverseWords("Vasyl love Alina");
             BuildNumber();
             SumDigits(12);
+            
+            int x = 15;
+            CheckEvenOdd(x);
         }
 
         public static string remove_char(string str, int n)
@@ -255,6 +259,23 @@
                 number = number / 10;
             }
             Console.WriteLine($"Sum of digits({number}) = {sum}");
+        }
+
+        static void CheckEvenOdd(int x)
+        {
+            Console.WriteLine($"Given number: {x}");
+            if (x % 2 == 0)
+            {
+                Console.WriteLine($"{x} is an odd integer");
+            }
+            else if (x % 2 != 0)
+            {
+                Console.WriteLine($"{x} is an even integer");
+            }
+            else
+            {
+                Console.WriteLine($"{x} equals to 0");
+            }
         }
     }
 }
