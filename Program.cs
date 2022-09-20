@@ -143,7 +143,7 @@
             int y = 14;
             CheckPositiveNegative(y);
 
-            int z = 24;
+            int z = 21;
             CheckIfCandidateCanVote(z);
 
             int a = 135;
@@ -274,7 +274,7 @@
 
         static void CheckEvenOdd(int x)
         {
-            Console.WriteLine($"Given number: {x}");
+            Console.WriteLine($"\nGiven number: {x}");
             if (x % 2 == 0)
             {
                 Console.WriteLine($"{x} is an odd integer");
