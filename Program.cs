@@ -156,6 +156,10 @@
             int d = 63;
             int e = 10;
             FindLargestNumber(c, d, e);
+
+            int f = 3;
+            int g = 4;
+            CoordinatePoint(f, g);
         }
 
         public static string remove_char(string str, int n)
@@ -374,6 +378,27 @@
             else
             {
                 Console.WriteLine("The 3rd Number is the greatest among three.");
+            }
+        }
+
+        static void CoordinatePoint(int x, int y)
+        {
+            Console.WriteLine($"\nIn which quadrant lies the coordinate point ({x},{y})?");
+            if (x > 0 && y > 0)
+            {
+                Console.WriteLine($"\nThe coordinate point ({x},{y}) lies in 1st quadrant.");
+            }
+            else if (x < 0 && y > 0)
+            {
+                Console.WriteLine($"\nThe coordinate point ({x},{y}) lies in 2nd quadrant.");
+            }
+            else if (x < 0 && y < 0)
+            {
+                Console.WriteLine($"\nThe coordinate point ({x},{y}) lies in 3rd quadrant.");
+            }
+            else
+            {
+                Console.WriteLine($"\nThe coordinate point ({x},{y}) lies in 4th quadrant.");
             }
         }
     }
