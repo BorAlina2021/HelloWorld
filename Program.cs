@@ -148,6 +148,9 @@
 
             int a = 135;
             CategorizeByHeight(a);
+
+            int b = -5;
+            DisplayValue(b);
         }
 
         public static string remove_char(string str, int n)
@@ -331,6 +334,25 @@
             {
                 Console.WriteLine($"The person's height is {x}, so he/she is tall.");
             }
+        }
+
+        static void DisplayValue(int m)
+        {
+            Console.WriteLine($"\nInput number: {m}");
+            int n;
+            if (m > 0)
+            {
+                n = 1;
+            }
+            else if (m == 0)
+            {
+                n = 0;
+            }
+            else
+            {
+                n = -1;
+            }
+            Console.WriteLine($"Output number: {n}");
         }
     }
 }
