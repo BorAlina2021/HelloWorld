@@ -145,6 +145,9 @@
 
             int z = 24;
             CheckIfCandidateCanVote(z);
+
+            int a = 135;
+            CategorizeByHeight(a);
         }
 
         public static string remove_char(string str, int n)
@@ -310,6 +313,23 @@
             else
             {
                 Console.WriteLine($"The candidate's age is {x}, so he/she is not able to vote.");
+            }
+        }
+
+        static void CategorizeByHeight(int x)
+        {
+            Console.WriteLine("\nCategorizing people's height: \n1.Dwarf; \n2.An avarage height; \n3.Tall");
+            if (x <= 135)
+            {
+                Console.WriteLine($"The person's height is {x}, so he/she is Dwarf.");
+            }
+            else if (136 <= x && x <= 170)
+            {
+                Console.WriteLine($"The person's height is {x}, so he/she is an avarage height.");
+            }
+            else
+            {
+                Console.WriteLine($"The person's height is {x}, so he/she is tall.");
             }
         }
     }
