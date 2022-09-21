@@ -137,29 +137,36 @@
             // BuildNumber();
             // SumDigits(12);
 
-            int x = 15;
-            CheckEvenOdd(x);
+            // int x = 15;
+            // CheckEvenOdd(x);
 
-            int y = 14;
-            CheckPositiveNegative(y);
+            // int y = 14;
+            // CheckPositiveNegative(y);
 
-            int z = 21;
-            CheckIfCandidateCanVote(z);
+            // int z = 21;
+            // CheckIfCandidateCanVote(z);
 
-            int a = 135;
-            CategorizeByHeight(a);
+            // int a = 135;
+            // CategorizeByHeight(a);
 
-            int b = -5;
-            DisplayValue(b);
+            // int b = -5;
+            // DisplayValue(b);
 
-            int c = 25;
-            int d = 63;
-            int e = 10;
-            FindLargestNumber(c, d, e);
+            // int c = 25;
+            // int d = 63;
+            // int e = 10;
+            // FindLargestNumber(c, d, e);
 
-            int f = 3;
-            int g = 4;
-            CoordinatePoint(f, g);
+            // int f = 3;
+            // int g = 4;
+            // CoordinatePoint(f, g);
+
+            double a = 784;
+            string b = "James";
+            double c = 70; 
+            double d = 80;
+            double e = 90;
+            SubjectsToCalculatePercentageDivision(a, b, c, d, e);
         }
 
         public static string remove_char(string str, int n)
@@ -400,6 +407,37 @@
             {
                 Console.WriteLine($"\nThe coordinate point ({x},{y}) lies in 4th quadrant.");
             }
+        }
+
+        static void SubjectsToCalculatePercentageDivision(double a, string b, double c, double d, double e)
+        {
+            Console.WriteLine($"Roll No: {a}");
+            Console.WriteLine($"Name of Student: {b}");
+            Console.WriteLine($"Marks in Physics: {c}");
+            Console.WriteLine($"Marks in Chemistry: {d}");
+            Console.WriteLine($"Marks in Computer Application: {e}");
+            double sum = c + d + e;
+            Console.WriteLine($"Total Marks = {sum}");
+            double percentage = sum/3.0;
+            Console.WriteLine($"Percentage = {percentage}");
+            string division;
+            if (percentage >= 65)
+            {
+                division = "First";
+            }
+            else if (percentage < 65 && percentage >= 45)
+            {
+                division = "Second";
+            }
+            else if (percentage < 45 && percentage > 36)
+            {
+                division = "Pass";
+            }
+            else
+            {
+                division = "Fail";
+            }
+            Console.WriteLine($"Division = {division}");
         }
     }
 }
