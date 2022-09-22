@@ -171,7 +171,7 @@
             // Console.WriteLine();
             // SumAverageNumbers();
 
-            int n = 3;
+            double n = 3;
             SumAverageNumbersWithN(n);
         }
 
@@ -462,12 +462,12 @@
             Console.WriteLine("\nThe average is: {0}", average);
         }
 
-        static void SumAverageNumbersWithN(int n)
+        static void SumAverageNumbersWithN(double n)
         {
-            int sum = 0;
-            int number = 0;
+            double sum = 0;
+            double number = 0;
             double average;
-            for (int i = 1; i <= n; i++)
+            for (double i = 1; i <= n; i++)
             {
 
                 Console.WriteLine("Number-{0} :", i);
@@ -475,7 +475,7 @@
                 sum = sum + number;
             }
             Console.WriteLine("\nThe sum of n numbers are: {0}", sum);
-            average = sum / 3.0;
+            average = sum / n;
             Console.WriteLine("\nThe average is: {0}", average);
         }
     }
