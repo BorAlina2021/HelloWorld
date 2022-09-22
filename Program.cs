@@ -161,15 +161,18 @@
             // int g = 4;
             // CoordinatePoint(f, g);
 
-            double a = 784;
-            string b = "James";
-            double c = 70;
-            double d = 80;
-            double e = 90;
-            SubjectsToCalculatePercentageDivision(a, b, c, d, e);
+            // double a = 784;
+            // string b = "James";
+            // double c = 70;
+            // double d = 80;
+            // double e = 90;
+            // SubjectsToCalculatePercentageDivision(a, b, c, d, e);
 
-            Console.WriteLine();
-            SumAverageNumbers();
+            // Console.WriteLine();
+            // SumAverageNumbers();
+
+            int n = 3;
+            SumAverageNumbersWithN(n);
         }
 
         public static string remove_char(string str, int n)
@@ -456,6 +459,23 @@
             }
             Console.WriteLine("\nThe sum of 10 numbers are: {0}", sum);
             average = sum / 10.0;
+            Console.WriteLine("\nThe average is: {0}", average);
+        }
+
+        static void SumAverageNumbersWithN(int n)
+        {
+            int sum = 0;
+            int number = 0;
+            double average;
+            for (int i = 1; i <= n; i++)
+            {
+
+                Console.WriteLine("Number-{0} :", i);
+                number = Convert.ToInt32(Console.ReadLine());
+                sum = sum + number;
+            }
+            Console.WriteLine("\nThe sum of n numbers are: {0}", sum);
+            average = sum / 3.0;
             Console.WriteLine("\nThe average is: {0}", average);
         }
     }
