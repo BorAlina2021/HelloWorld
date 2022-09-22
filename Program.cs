@@ -163,10 +163,13 @@
 
             double a = 784;
             string b = "James";
-            double c = 70; 
+            double c = 70;
             double d = 80;
             double e = 90;
             SubjectsToCalculatePercentageDivision(a, b, c, d, e);
+
+            Console.WriteLine();
+            SumAverageNumbers();
         }
 
         public static string remove_char(string str, int n)
@@ -418,7 +421,7 @@
             Console.WriteLine($"Marks in Computer Application: {e}");
             double sum = c + d + e;
             Console.WriteLine($"Total Marks = {sum}");
-            double percentage = sum/3.0;
+            double percentage = sum / 3.0;
             Console.WriteLine($"Percentage = {percentage}");
             string division;
             if (percentage >= 65)
@@ -438,6 +441,22 @@
                 division = "Fail";
             }
             Console.WriteLine($"Division = {division}");
+        }
+
+        static void SumAverageNumbers()
+        {
+            int sum = 0;
+            int number;
+            double average;
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine("Number-{0} :", i);
+                number = Convert.ToInt32(Console.ReadLine());
+                sum = sum + number;
+            }
+            Console.WriteLine("\nThe sum of 10 numbers are: {0}", sum);
+            average = sum / 10.0;
+            Console.WriteLine("\nThe average is: {0}", average);
         }
     }
 }
