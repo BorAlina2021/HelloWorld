@@ -176,7 +176,9 @@
 
             // DisplayAndReverseArray();
 
-            SumElementsArray();
+            // SumElementsArray();
+
+            CopyElementsToArray();
         }
 
         public static string remove_char(string str, int n)
@@ -523,6 +525,33 @@
                 sum += array[i];
             }
             Console.WriteLine(sum);
+        }
+
+        static void CopyElementsToArray()
+        {
+            int i;
+            int n = 3;
+            int[] array = new int[n];
+            int[] array1 = new int[n];
+            for (i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine("element - {0}: ", i);
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (i = 0; i < n; i++)
+            {
+                array1[i] = array[i];
+            }
+            Console.Write("\nThe elements stored in the first array are: ");
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("{0}  ", array[i]);
+            }
+            Console.Write("\nThe elements copied into the second array are: ");
+            for (i = 0; i < n; i++)
+            {
+                Console.Write("{0}  ", array1[i]);
+            }
         }
     }
 }
