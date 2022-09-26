@@ -183,8 +183,11 @@
             // int x = 3;
             // ArrayFindBiggestNumber(x);
 
+            // int n = 3;
+            // ArrayFindLowestNumber(n);
+
             int n = 3;
-            ArrayFindLowestNumber(n);
+            ArrayRepetitionNumber(n);
         }
 
         public static string remove_char(string str, int n)
@@ -600,6 +603,23 @@
                 }
             }
             Console.WriteLine($"The lowest number in the array is {lowestNumber}");
+        }
+
+        static void ArrayRepetitionNumber(int n)
+        {
+            int i;
+            int[] array = new int[] { 2, 3, 2, 3, 3, 1, 5 };
+
+            Console.WriteLine("The array: [{0}]", string.Join(", ", array));
+            int count = 0;
+            for (i = 0; i < array.Length; i++)
+            {
+                if (array[i] == n)
+                {
+                    count = count + 1;
+                }
+            }
+            Console.WriteLine("The occurrence number {0} in array is " + count, n);
         }
     }
 }
