@@ -180,8 +180,11 @@
 
             // CopyElementsToArray();
 
-            int x = 3;
-            ArrayFindBiggestNumber(x);
+            // int x = 3;
+            // ArrayFindBiggestNumber(x);
+
+            int n = 3;
+            ArrayFindLowestNumber(n);
         }
 
         public static string remove_char(string str, int n)
@@ -576,6 +579,27 @@
                 }
             }
             Console.WriteLine($"The biggest number in the array is {biggestNumber}");
+        }
+
+        static void ArrayFindLowestNumber(int n)
+        {
+            int i;
+            int lowestNumber;
+            int[] array = new int[n];
+            for (i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine("element - {0}: ", i);
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            lowestNumber = array[0];
+            for (i = 0; i < array.Length; i++)
+            {
+                if (array[i] < lowestNumber)
+                {
+                    lowestNumber = array[i];
+                }
+            }
+            Console.WriteLine($"The lowest number in the array is {lowestNumber}");
         }
     }
 }
