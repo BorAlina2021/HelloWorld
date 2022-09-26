@@ -174,7 +174,9 @@
             // double n = 3;
             // SumAverageNumbersWithN(n);
 
-            DisplayAndReverseArray();
+            // DisplayAndReverseArray();
+
+            SumElementsArray();
         }
 
         public static string remove_char(string str, int n)
@@ -502,6 +504,25 @@
                 Console.Write("{0} ", array[i]);
             }
 
+        }
+
+        static void SumElementsArray()
+        {
+            int i;
+            int sum = 0;
+            int n = 3;
+            int[] array = new int[n];
+            for (i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine("element - {0}: ", i);
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Sum of all elements stored in the array is:");
+            for (i = 0; i < array.Length; i++)
+            {
+                sum += array[i];
+            }
+            Console.WriteLine(sum);
         }
     }
 }
