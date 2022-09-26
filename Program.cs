@@ -178,7 +178,10 @@
 
             // SumElementsArray();
 
-            CopyElementsToArray();
+            // CopyElementsToArray();
+
+            int x = 3;
+            ArrayFindBiggestNumber(x);
         }
 
         public static string remove_char(string str, int n)
@@ -552,6 +555,27 @@
             {
                 Console.Write("{0}  ", array1[i]);
             }
+        }
+
+        static void ArrayFindBiggestNumber(int n)
+        {
+            int i;
+            int biggestNumber;
+            int[] array = new int[n];
+            for (i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine("element - {0}: ", i);
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            biggestNumber = array[0];
+            for (i = 0; i < array.Length; i++)
+            {
+                if (array[i] > biggestNumber)
+                {
+                    biggestNumber = array[i];
+                }
+            }
+            Console.WriteLine($"The biggest number in the array is {biggestNumber}");
         }
     }
 }
