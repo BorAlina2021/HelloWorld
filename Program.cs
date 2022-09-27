@@ -191,6 +191,8 @@
 
 
             ArrayEvenNumbers();
+
+            ArrayOddNumbers();
         }
 
         public static string remove_char(string str, int n)
@@ -639,6 +641,22 @@
                 }
             }
             Console.Write($"Even numbers are {count}");
+        }
+
+        static void ArrayOddNumbers()
+        {
+            int i;
+            int[] array = new int[11] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
+            Console.WriteLine("\nThe array: [{0}]", string.Join(", ", array));
+            int count = 0;
+            for (i = 0; i < array.Length; i++)
+            {
+                if (array[i] % 2 != 0)
+                {
+                    count++;
+                }
+            }
+            Console.Write($"Odd numbers are {count}");
         }
     }
 }
