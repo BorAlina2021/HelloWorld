@@ -186,8 +186,11 @@
             // int n = 3;
             // ArrayFindLowestNumber(n);
 
-            int n = 3;
-            ArrayRepetitionNumber(n);
+            // int n = 3;
+            // ArrayRepetitionNumber(n);
+
+
+            ArrayEvenNumbers();
         }
 
         public static string remove_char(string str, int n)
@@ -620,6 +623,22 @@
                 }
             }
             Console.WriteLine("The occurrence number {0} in array is " + count, n);
+        }
+
+        static void ArrayEvenNumbers()
+        {
+            int i;
+            int[] array = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            Console.WriteLine("The array: [{0}]", string.Join(", ", array));
+            int count = 0;
+            for (i = 0; i < array.Length; i++)
+            {
+                if (array[i] % 2 == 0)
+                {
+                    count++;
+                }
+            }
+            Console.Write($"Even numbers are {count}");
         }
     }
 }
