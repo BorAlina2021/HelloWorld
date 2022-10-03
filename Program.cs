@@ -206,19 +206,28 @@
             // Console.WriteLine(Audi);
             // Console.WriteLine(Audi.ToString());
 
-            Person myPerson = new Person();
-            myPerson.Greet();
+            // Person myPerson = new Person();
+            // myPerson.Greet();
 
-            Student MyStudent = new Student();
-            MyStudent.SetAge(24);
-            MyStudent.Greet();
-            MyStudent.ShowAge();
-            MyStudent.Study();
+            // Student MyStudent = new Student();
+            // MyStudent.SetAge(24);
+            // MyStudent.Greet();
+            // MyStudent.ShowAge();
+            // MyStudent.Study();
 
-            Professor MyProfessor = new Professor();
-            MyProfessor.SetAge(78);
-            MyProfessor.Greet();
-            MyProfessor.Explain();
+            // Professor MyProfessor = new Professor();
+            // MyProfessor.SetAge(78);
+            // MyProfessor.Greet();
+            // MyProfessor.Explain();
+
+            PhotoBook MyAlbum1 = new PhotoBook();
+            Console.WriteLine(MyAlbum1.GetNumberPages());
+
+            PhotoBook myAlbum2 = new PhotoBook(24);
+            Console.WriteLine(myAlbum2.GetNumberPages());
+
+            BigPhotoBook MyBigPhotoBookAlbum = new BigPhotoBook();
+            Console.WriteLine(MyBigPhotoBookAlbum.GetNumberPages());
         }
 
         public static string remove_char(string str, int n)
