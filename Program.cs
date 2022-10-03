@@ -190,9 +190,35 @@
             // ArrayRepetitionNumber(n);
 
 
-            ArrayEvenNumbers();
+            // ArrayEvenNumbers();
 
-            ArrayOddNumbers();
+            // ArrayOddNumbers();
+
+            // Car Audi = new Car("Audi", "A4", "deep blue", 5);
+            // Car Volvo = new Car("Volvo", "s90", "brown", 4);
+            // Car Mitsubishi = new Car("Mitsubishi", "ASX", "white", 5);
+            // Car[] cars = new Car[]{Audi, Volvo, Mitsubishi};
+            // foreach(Car car in cars)
+            // {
+            //     Console.WriteLine(car);
+            // }
+            // Audi.PrintCar();
+            // Console.WriteLine(Audi);
+            // Console.WriteLine(Audi.ToString());
+
+            Person myPerson = new Person();
+            myPerson.Greet();
+
+            Student MyStudent = new Student();
+            MyStudent.SetAge(24);
+            MyStudent.Greet();
+            MyStudent.ShowAge();
+            MyStudent.Study();
+
+            Professor MyProfessor = new Professor();
+            MyProfessor.SetAge(78);
+            MyProfessor.Greet();
+            MyProfessor.Explain();
         }
 
         public static string remove_char(string str, int n)
