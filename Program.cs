@@ -1,4 +1,5 @@
-﻿namespace HelloWorld
+﻿using HelloWorld.Enums;
+namespace HelloWorld
 {
     class Program
     {
@@ -220,14 +221,29 @@
             // MyProfessor.Greet();
             // MyProfessor.Explain();
 
-            PhotoBook MyAlbum1 = new PhotoBook();
-            Console.WriteLine(MyAlbum1.GetNumberPages());
+            // PhotoBook MyAlbum1 = new PhotoBook();
+            // Console.WriteLine(MyAlbum1.GetNumberPages());
 
-            PhotoBook myAlbum2 = new PhotoBook(24);
-            Console.WriteLine(myAlbum2.GetNumberPages());
+            // PhotoBook myAlbum2 = new PhotoBook(24);
+            // Console.WriteLine(myAlbum2.GetNumberPages());
 
-            BigPhotoBook MyBigPhotoBookAlbum = new BigPhotoBook();
-            Console.WriteLine(MyBigPhotoBookAlbum.GetNumberPages());
+            // BigPhotoBook MyBigPhotoBookAlbum = new BigPhotoBook();
+            // Console.WriteLine(MyBigPhotoBookAlbum.GetNumberPages());
+
+            Console.WriteLine("Hello World!");
+            ExampleClassPerson1 MyPerson1 = new ExampleClassPerson1(Gender.Female, "Alina", "Borachok", "not employed", "Rozdil (village)", 22, 164, 60, "brown", "hazel");
+            ExampleClassPerson1 MyPerson2 = new ExampleClassPerson1(Gender.Male, "Vasyl", "Kurtianyk", "Full Stack .NET Developer", "Rudnyky (village)", 23, 192, 82, "brown", "brown");
+            Console.WriteLine($"Person to be described: {MyPerson1.GetFullName()} ({MyPerson1.GetGender()}) - {MyPerson1.GetOccupation()}");
+            Console.WriteLine($"\nThe person {MyPerson1.GetFullName()} was born in {MyPerson1.GetLivingPlace()} in {MyPerson1.GetYearOfBirth()}, so {MyPerson1.SetGender(Gender.Female)} is {MyPerson1.GetAge()} y.o.");
+            Console.WriteLine($"\n{MyPerson1.GetFullName()}'s height is {MyPerson1.GetHeight()}cm and weight is {MyPerson1.GetWeight()}kg");
+            Console.WriteLine($"His/her eyes color is {MyPerson1.GetColorEyes()} and hair is {MyPerson1.GetColorHair()}");
+            Console.WriteLine();
+            Console.WriteLine($"Person to be described: {MyPerson2.GetFullName()} ({MyPerson2.GetGender()}) - {MyPerson2.GetOccupation()}");
+            Console.WriteLine($"\nThe person {MyPerson2.GetFullName()} was born in {MyPerson2.GetLivingPlace()} in {MyPerson2.GetYearOfBirth()}, so {MyPerson2.SetGender(Gender.Male)} is {MyPerson2.GetAge()} y.o.");
+            Console.WriteLine($"\n{MyPerson2.GetFullName()}'s height is {MyPerson2.GetHeight()}cm and weight is {MyPerson2.GetWeight()}kg");
+            Console.WriteLine($"His/her eyes color is {MyPerson2.GetColorEyes()} and hair is {MyPerson2.GetColorHair()}");
+            MyPerson2.Car = new Car("Audi", "A4", "deep blue", 5);
+            MyPerson2.DisplayCar();
         }
 
         public static string remove_char(string str, int n)

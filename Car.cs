@@ -11,23 +11,23 @@ namespace HelloWorld
 
         public string Brand
         {
-            get {return _brand;}
-            set {_brand = value;}
+            get { return _brand; }
+            set { _brand = value; }
         }
         public string Name
         {
-            get { return _name;}
-            set {_name = value;}
+            get { return _name; }
+            set { _name = value; }
         }
         public string Color
         {
-            get {return _color;}
-            set {_color = value;}
+            get { return _color; }
+            set { _color = value; }
         }
         public int CountOfDoors
         {
-            get {return _countOfDoors;}
-            set {_countOfDoors = value;}
+            get { return _countOfDoors; }
+            set { _countOfDoors = value; }
         }
         public Car(string b, string n, string c, int d)
         {
@@ -38,12 +38,12 @@ namespace HelloWorld
         }
         public void PrintCar()
         {
-           Console.WriteLine($"The car is {Brand} {Name}, the color of it is {Color}; the car contains {CountOfDoors} doors.");
+            Console.WriteLine($"{Brand} {Name} car, the color of it is {Color}; the car contains {CountOfDoors} doors.");
         }
         public override string ToString()
         {
-             return $"The car is {Brand} {Name}, the color of it is {Color}; the car contains {CountOfDoors} doors.";
-         }
+            return $"{Brand} {Name} car, the color of it is {Color}; the car contains {CountOfDoors} doors.";
+        }
         public Car()
         {
 
